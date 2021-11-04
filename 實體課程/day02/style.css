@@ -1,0 +1,45 @@
+.box{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  box-shadow: 5px 5px 10px gainsboro;
+  border: 0px 2px 1px #b1125b;
+}
+
+.item{
+  width: 280px;
+  margin: 10px;
+  text-align: center;
+}
+
+.no2{
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+}
+
+/* 第一行p */
+
+.has-text-shadow {
+  text-shadow: 0 2px 1px #b1125b;
+}
+
+.is-text-teko {
+  font-family: 'Teko', sans-serif;
+}
+
+.is-size-1 {
+  font-size: 40px;
+}
+
+.has-text-main {
+  color: #E51F58;
+}
+/* 第二行p */
+.has-text-weight-semibold {
+font-weight: 600;
+}
+
+.is-size-5 {
+font-size: 1.25rem;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		nav {
+			display: flex;
+		}
+		nav a{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 10px;
+			text-decoration: none;
+		}
+		nav .line{
+			width: 0px;
+			height: 4px;
+			background-color: #f00;
+			transition: width 1s;
+		}
+		nav a:hover .line{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+
+	<nav>
+		<a href="#">
+			<span>amos</span>
+			<span class="line"></span>
+		</a>
+		<a href="#">
+			<span>vivian</span>
+			<span class="line"></span>
+		</a>
+		<a href="#">
+			<span>alvee</span>
+			<span class="line"></span>
+		</a>
+		<a href="#">
+			<span>kevin</span>
+			<span class="line"></span>
+		</a>
+	</nav>
+
+
+
+	
+</body>
+</html>

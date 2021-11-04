@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex{
+      width: 960px;
+      /* 設定flex後，會變 block 特性 */
+      display: flex;
+      flex-direction: row;
+      /* 超過父層，可以設定換行 */
+      flex-wrap: wrap;
+      background-color: gray;
+    }
+    .box{
+      background-color: red;
+      width: 200px;
+      height: 100px;
+      margin: 20px;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="flex">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+  </div>
+</body>
+</html>

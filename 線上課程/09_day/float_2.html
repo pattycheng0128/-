@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      width: 960px;
+      background-color: gray;
+      margin: auto;
+    }
+    .col{
+      width: 280px;
+      background-color: orange;
+      padding: 10px;
+      margin: 10px;
+      float:left;
+    }
+    .col img{
+      width: 100%;
+    }
+    /* 父層抓到高度了，閃開浮動物件，會跑到最後面-紅色那塊*/
+    .clear{
+      clear: both;
+      height: 0px;
+      /* background-color: red; */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="col">
+      <img src="https://picsum.photos/200/200/?random=1">
+      <h3>title</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quisquam, totam quam nam excepturi numquam amet voluptas in accusantium animi autem beatae alias aperiam nisi perferendis! In exercitationem iusto sapiente!</p>
+    </div>
+    <div class="col">
+      <img src="https://picsum.photos/200/200/?random=2">
+      <h3>title</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quisquam, totam quam nam excepturi numquam amet voluptas in accusantium animi autem beatae alias aperiam nisi perferendis! In exercitationem iusto sapiente!</p>
+    </div>
+    <div class="col">
+      <img src="https://picsum.photos/200/200/?random=3">
+      <h3>title</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quisquam, totam quam nam excepturi numquam amet voluptas in accusantium animi autem beatae alias aperiam nisi perferendis! In exercitationem iusto sapiente!</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+</body>
+</html>
