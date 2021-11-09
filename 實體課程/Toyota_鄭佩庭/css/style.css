@@ -1,0 +1,133 @@
+.wrap{
+  width: 960px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 400px;
+}
+.item{
+  margin-right: 30px;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  z-index: 2;
+}
+.item img{
+  width: 600px;
+  height: 400px;
+}
+.item .info_one{
+  background-color: #DC143C;
+  width: 200px;
+  padding: 7px 10px;
+  text-align: right; 
+}
+.item .info_one p{
+  display: inline-block;
+  font-size: 36px;
+}
+.item .info_one span{
+  display: inline-block;
+  transform: rotate(90deg);
+  font-size: 50px;
+  font-family: monospace;
+}
+.item .info_two{
+  padding: 10px 10px;
+  width: 200px;
+  background-color: black;
+  line-height: 1.8;
+}
+.item .info_two p{
+  font-size: 14px;
+}
+.item .info_two span{
+  font-size: 22px;
+}
+.item .car_info{
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  color: white;
+  text-align: left;
+}
+.revolution{
+  background-color: gainsboro;
+  padding: 10px;
+  width: 400px;
+  position: absolute;
+  top: 380px;
+  left: -50px;
+}
+.revolution_one{
+  display: flex;
+  margin-top: 10px;
+}
+.revolution_one .txt{
+  color: #DC143C;
+  font-size: 12px;
+  font-weight: 800;
+}
+.revolution_one .line{
+  width: 260px;
+  height: 1px;
+  background-color: red;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.revolution_two{
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.revolution_two span{
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+.background{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -50px;
+  right: -50px;
+  color: white;
+  text-align: left;
+  background-color: gainsboro;
+  z-index: -1;
+}
+
+/* even */
+.item .car_info_even{
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  color: white;
+  text-align: left;
+}
+.item .car_info_even .info_one{
+  text-align: left;
+}
+.revolution_even{
+  background-color: gainsboro;
+  padding: 10px;
+  width: 400px;
+  position: absolute;
+  top: 380px;
+  right: -50px;
+}
+.background_even{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -50px;
+  left: -50px;
+  color: white;
+  text-align: left;
+  background-color: gainsboro;
+  z-index: -1;
+}

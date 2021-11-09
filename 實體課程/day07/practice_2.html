@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* 桌機 */
+    .item{
+      /* width: calc(16.666666% - 20px); */
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    img{
+      width: 100%;
+    }
+    /* ipad 直向 >= 768px 1欄*/
+    @media screen and (min-width: 768px){
+      /* 先設定最小的尺寸,wrap放在這裡面 */
+      .wrap{
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+      }
+      .item{
+        width: calc(100% / 2 - 20px);
+        /* display: flex;
+        flex-wrap: wrap; */
+      }
+    /* ipad 直向 >= 1024px 3欄*/
+    @media screen and (min-width: 1024px){
+      .item{
+        width: calc(100% / 3 - 20px);
+      }
+    /* ipad 直向 >= 1200px ˊ6欄 */
+    @media screen and (min-width: 1200px){
+      .item{
+        width: calc(100% / 6 - 20px);
+      }
+      
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="item">
+      <img src="https://picsum.photos/200/200/?random=1">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/200/200/?random=2">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/200/200/?random=3">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/200/200/?random=4">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/200/200/?random=5">
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/200/200/?random=6">
+    </div>
+  </div>
+</body>
+</html>

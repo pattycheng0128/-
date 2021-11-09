@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.item {
+			margin: 10px;
+		}
+		.item img{
+			width: 100%;
+			vertical-align: top;
+		}
+		.txt{
+			background-color: #fa0;
+			min-height: 100px;
+			font-size: 100px;
+		}
+		@media screen and (min-width: 768px){
+			.wrap{
+				max-width: 1200px;
+				display: flex;
+			}
+			.main-col:first-child{
+				width: 66.666666%;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.main-col:first-child + .main-col{
+				width: 33.333333%;
+			}
+			.main-col:first-child .txt{
+				width: calc(66.666666% - 20px);
+			}
+			.main-col:first-child .pic{
+				/*width: 33.333333%;*/
+				width: calc(33.333333% - 20px);
+			}
+			.main-col:first-child .item:nth-of-type(3){
+				order: 1;
+			}
+			.main-col:first-child + .main-col .item{
+				height: calc(100% - 20px);
+			}
+		}
+	</style>
+</head>
+<body>
+	
+
+	<div class="wrap">
+		<!-- left ciolumn -->
+		<div class="main-col">
+			<div class="item txt">TXT 1</div>
+			<div class="item pic">
+				<img src="https://picsum.photos/300/300?random=1" alt="圖片說明">
+			</div>
+			<div class="item txt">TXT 2</div>
+			<div class="item pic">
+				<img src="https://picsum.photos/300/300?random=2" alt="圖片說明">
+			</div>
+		</div>
+
+		<!-- right column -->
+		<div class="main-col">
+			<div class="item txt">TXT R3</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

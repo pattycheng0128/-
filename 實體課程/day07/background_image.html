@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- backgroud-image可以2張以上疊圖 -->
+  <style>
+    .box{
+      width: 1200px;
+      height: 90vh;
+      background-color: gray;
+      background-image: url('image/car1.png'),
+      url('image/th.png'),
+      url('image/2.png'),
+      url('image/3.png');
+
+      background-repeat: no-repeat;
+      background-position: left top,
+      right top,
+      right bottom,
+      left bottom;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
