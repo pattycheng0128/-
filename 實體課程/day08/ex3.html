@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 放在跟目錄下，如果放在子曾，父*/
+    :root{
+      --amos-col-gap: 15px
+    }
+    .container{
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+    .pic img{
+      width: 100%;
+    }
+    /* 先規劃好每欄的設定 */
+    .col-1{width: 8.33333%;   box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-2{width: 16.66666%;  box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-3{width: 25%;        box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-4{width: 33.33333%;  box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-5{width: 41.66666%;  box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-6{width: 50%;        box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-7{width: 58.33333%;  box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-8{width: 66.66666%;  box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-9{width: 75%;        box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-10{width: 83.33333%; box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-11{width: 91.66666%; box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+    .col-12{width: 100%;      box-sizing: border-box; padding: 0 var(--amos-col-gap);}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="col-3">
+      <div class="pic">
+        <img src="https://picsum.photos/300/200/?random=1">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="pic">
+        <img src="https://picsum.photos/300/200/?random=1">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="pic">
+        <img src="https://picsum.photos/300/200/?random=1">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="pic">
+        <img src="https://picsum.photos/300/200/?random=1">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

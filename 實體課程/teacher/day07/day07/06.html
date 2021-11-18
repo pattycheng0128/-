@@ -24,9 +24,6 @@
 			color: #fff;
 			position: relative;
 		}
-		.group .item:nth-child(even) .title-group{
-			margin-left: auto;
-		}
 		.title-group h2{
 			font-size: 45px;
 		}
@@ -42,18 +39,10 @@
 			align-items: center;
 			margin-left: 15%;
 		}
-		.group .item:nth-child(even) .pic-group{
-			margin-left: auto;
-			margin-right: 15%;
-			flex-direction: row-reverse;
-		}
+		
 		.pic-group .cover{
 			width: 662px;
 			margin-right: -70px;
-		}
-		.group .item:nth-child(even) .pic-group .cover{
-			margin-right: 0px;
-			margin-left: -70px;	
 		}
 		.pic-group .cover img{
 			width: 100%;
@@ -73,10 +62,26 @@
 			position: relative;
 			z-index: 3;
 		}
+		/* even */
+		.group .item:nth-child(even) .title-group{
+			margin-left: auto;
+		}
+		.group .item:nth-child(even) .pic-group{
+			margin-left: auto;
+			margin-right: 15%;
+			flex-direction: row-reverse;
+		}
+		.group .item:nth-child(even) .pic-group .cover{
+			margin-right: 0px;
+			margin-left: -70px;	
+		}
 		.group .item:nth-child(even) .text-group{
 			margin-left: auto;
 			margin-right: 10%;
 		}
+
+
+
 	</style>
 </head>
 <body>
@@ -108,6 +113,7 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, placeat?</p>
 			</div>
 		</div>
+		
 		<div class="item">
 			<div class="title-group">
 				<h2><span>01</span>操控樂趣</h2>

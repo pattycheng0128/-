@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* #menu-checked:checked ~ p{
+      color: red;
+    } */
+    #menu-checked + p{
+      display: none;
+    }
+    #menu-checked:checked + p{
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <input type="checkbox" id="menu-checked">
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eius amet, maxime sed atque neque quo minima? Aut, pariatur optio dolor qui veritatis animi eaque itaque, voluptate omnis odit dolorem!</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eius amet, maxime sed atque neque quo minima? Aut, pariatur optio dolor qui veritatis animi eaque itaque, voluptate omnis odit dolorem!</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eius amet, maxime sed atque neque quo minima? Aut, pariatur optio dolor qui veritatis animi eaque itaque, voluptate omnis odit dolorem!</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eius amet, maxime sed atque neque quo minima? Aut, pariatur optio dolor qui veritatis animi eaque itaque, voluptate omnis odit dolorem!</p>
+</body>
+</html>

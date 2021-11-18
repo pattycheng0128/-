@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <title>Document</title>
+  <style>
+    /* 放在跟目錄下，如果放在子層，父層會找不到子層*/
+    :root{
+      --amos-col-gap: 10px
+    }
+    .container{
+      background-color: orange;
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      padding: 0 var(--amos-col-gap);
+    }
+    .pic img{
+      width: 100%;
+    }
+
+    /* 所有class 有 col- 開頭的加上底下的屬性 */
+    [class*="col-"]{
+      box-sizing: border-box; 
+      padding: 0 var(--amos-col-gap);
+    }
+
+    /* 先規劃好每欄的設定 */
+    .col-1{width: 8.33333%; }
+    .col-2{width: 16.66666%;}
+    .col-3{width: 25%;      }
+    .col-4{width: 33.33333%;}
+    .col-5{width: 41.66666%;}
+    .col-6{width: 50%;      }
+    .col-7{width: 58.33333%;}
+    .col-8{width: 66.66666%;}
+    .col-9{width: 75%;      }
+    .col-10{width: 83.33333%}
+    .col-11{width: 91.66666%}
+    .col-12{width: 100%;    }
+
+    img{
+      width: 100%;
+    }
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      /* 這邊要用計算的方式，不然 --amos-col-gap 值被改掉後，畫面會超出 container*/
+      margin-left: calc(var(--amos-col-gap) * -1);
+      margin-right: calc(var(--amos-col-gap) * -1);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="row amos">
+        <div class="col-6">
+        <div class="pic">
+          <img src="https://picsum.photos/300/200/?random=1">
+        </div>
+      </div>
+      <div class="col-6 amos">
+        <div class="row">
+          <div class="col-3">
+            <div class="pic">
+              <img src="https://picsum.photos/300/200/?random=1">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="pic">
+              <img src="https://picsum.photos/300/200/?random=1">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="pic">
+              <img src="https://picsum.photos/300/200/?random=1">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="pic">
+              <img src="https://picsum.photos/300/200/?random=1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

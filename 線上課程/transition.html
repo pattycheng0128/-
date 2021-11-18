@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .btn{
+      padding: 10px 20px;
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      /* 屬性 轉換時間 延遲執行時間 速度 */
+      /* 屬性要搭配 hover 才看得出效果 */
+      transition: padding 1s 0s,background-color 1s 0s ease;
+    }
+    .btn:hover{
+      background-color: orange;
+      color: pink;
+      padding: 30px 30px;
+    }
+  </style>
+</head>
+<body>
+  <a href="" class="btn">送出</a>
+</body>
+</html>

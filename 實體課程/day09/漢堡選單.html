@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <title>Document</title>
+  <style>
+    header{
+      background-color:gainsboro;
+    }
+    .container{
+      max-width: 1200px;
+      padding: 10px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .logo{
+      width: 100%;
+    }
+    .logo h1{
+      display: inline-block;
+      padding-top: 10px;
+    }
+    .logo img{
+      width: 100%;
+      vertical-align: top;
+      width: 50px;
+      height: 30px;
+      padding-right: 10px;
+    }
+    .main-nav a{
+        text-decoration: none;
+        display: block;
+    }
+    
+    @media screen and (max-width: 1199px){
+      .hb{
+      width: 40px;
+      height: 40px;
+      background-color: black;
+      position: relative;
+      }
+      .hb span{
+        width: 32px;
+        height: 4px;
+        background-color: orange;
+        position: absolute;
+        left: 4px;
+        right: 4px;
+      }
+      .hb span.bar-1{
+        top: 7px;
+        transition: top 0.5s 0.5s,
+                    transform 0.5s 0s;
+      }
+      .hb span.bar-2{
+        top: 18px;
+      }
+      .hb span.bar-3{
+        bottom: 7px;
+        transition: bottom 0.5s 0.5s,
+                    transform 0.5s 0s;
+      }
+      #menu-check:checked ~ header .hb span.bar-1{
+        top: 18px;
+        transform: rotate(45deg);
+        transition: top 0.5s 0s,
+                    transform 0.5s 0.5s;
+      }
+      #menu-check:checked ~ header .hb span.bar-2{
+        opacity: 0;
+      }
+      #menu-check:checked ~ header .hb span.bar-3{
+        top: 18px;
+        transform: rotate(-45deg);
+        transition: bottom 0.5s 0s,
+                    transform 0.5s 0.5s;
+      }
+      .main-nav{
+        /* display: none; */
+        position: absolute;
+        background-color: orange;
+        top: 100%;
+        left: -100%;
+        width: 30%;
+        height: calc(100vh - 65px);
+        transition: left 1s;
+      }
+      .main-nav a{
+        padding: 20px;
+        border-bottom: 1px solid gainsboro;
+        border: 1px solid gainsboro;
+      }
+      #menu-check{
+        /* position: absolute; */
+        position: fixed;
+        z-index: 10;
+      }
+      #menu-check:checked ~ header .main-nav{
+        /* display: block; */
+        left: 0;
+      }
+      /* 隱藏 checkbox */
+      input[type=checkbox]{
+        display: none;
+      }
+    }
+    @media screen and (min-width: 1200px){
+      .hb{
+        display: none;
+      }
+      .main-nav{
+        display: flex;
+      }
+      .main-nav a{
+        /* padding: 20px 20px; */
+        border: 1px solid gray;
+        padding: 0px 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <input type="checkbox" id="menu-check">
+  <header>
+    <div class="container">
+      <a href="https://5xruby.tw/" class="logo">
+        <img src="company.jpg" alt="五倍紅寶石">
+        <h1>五倍紅寶石 ・專業程式教育機構</h1>
+      </a>
+      <!-- 漢堡選單 for 要對到 checkbox 的 id-->
+      <label for="menu-check" class="hb">
+        <span class="bar-1"></span>
+        <span class="bar-2"></span>
+        <span class="bar-3"></span>
+      </label>
+      <div class="main-nav">
+        <a href="https://astro.5xruby.tw/">ASTRO Camp</a>
+        <a href="https://iamcoding.tw/">線上課程</a>
+        <a href="https://5xruby.tw/courses">短期課程</a>
+        <a href="https://5xruby.tw/posts">技術文章</a>
+        <a href="https://5xruby.tw/news">五倍消息</a>
+      </div>
+    </div>
+  </header>
+  <section>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate, sit sed maxime fugiat a tenetur vitae sunt modi, soluta iure eveniet sapiente. Facilis numquam esse laborum facere, error vel!
+    </p>
+  </section>
+</body>
+</html>
